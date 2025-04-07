@@ -1,0 +1,18 @@
+graph TD
+    subgraph 数据流通层
+        A[数据采集] --> B[数据清洗]
+        B --> C[多源数据融合]
+    end
+    subgraph 风险管理层
+        C --> D[风险识别引擎]
+        D --> E[动态评估模型]
+        E --> F[智能决策中心]
+    end
+    subgraph 应用层
+        F --> G[库存优化]
+        F --> H[供应商协同]
+        F --> I[应急响应]
+    end
+    style A fill:#F9E79F,stroke:#F1C40F
+    style D fill:#AED6F1,stroke:#3498DB
+    style G fill:#ABEBC6,stroke:#27AE60
